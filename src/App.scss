@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form_container {
+  font-family: Roboto;
+  background-color: #37384e;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_box {
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  padding: 20px;
+  width: 900px;
+  justify-content: space-between;
+}
+
+.form_left {
+  padding: 63px 20px;
+  width: 400px;
+}
+
+.title,
+.subtitle {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 56px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  img {
+    margin-right: 15px;
+  }
+}
+
+.submit {
+  margin-top: 50px;
+}
+
+.email {
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activeValidate {
+  color: #ff644b;
+}
+
+.input {
+  padding: 17px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 10px 0;
+  background-color: white;
+  cursor: pointer;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.483);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  padding: 17px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+  /* background: linear-gradient(#222741, #222741); */
+  background: linear-gradient(180deg, #222741, #222741);
+  transition: 0.5s ease-out;
+  &:hover {
+    background: linear-gradient(#ff586a, #ff644b);
+    box-shadow: #ff644b 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+}
+
+.form_right {
+}
+
+.active {
+  .input {
+    border: 1px solid #ff644b;
+    background-color: #ff634b2f;
+    color: #ff644b;
+  }
+}
+
+.dn {
+  display: none;
+}
+
+.success-card {
+  width: 320px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  color: #222741;
+}
+
+.sucess_img {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+.success_title {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.success_text {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.success_dismiss {
+  background: linear-gradient(#222741, #222741);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  border: none;
+  &:hover {
+    background: linear-gradient(#ff586a, #ff644b);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
