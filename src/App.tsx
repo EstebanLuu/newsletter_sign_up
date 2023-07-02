@@ -1,5 +1,6 @@
 import "./App.scss";
 import img from "../../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg";
+import imgResponsive from "../../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg";
 import features from "../../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg";
 import { useState } from "react";
 
@@ -19,7 +20,6 @@ function App() {
 
     if (isValidEmail) {
       setVerify(!verify);
-      setEmail("");
       setError(!error);
       // Realizar otras acciones si el correo es válido
     } else {
@@ -28,6 +28,7 @@ function App() {
   };
 
   const handleVerify = () => {
+    setEmail("");
     setVerify(!verify);
   };
 
@@ -76,6 +77,9 @@ function App() {
         </div>
         <div className="form_right">
           <img src={img} alt="" />
+        </div>
+        <div className="form_right-mobile">
+          <img src={imgResponsive} alt="" />
         </div>
       </div>
 
