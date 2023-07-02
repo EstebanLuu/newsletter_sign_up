@@ -1,7 +1,7 @@
 import "./App.scss";
-import img from "../../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg";
-import imgResponsive from "../../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg";
-import features from "../../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg";
+import img from "./assets/images/illustration-sign-up-desktop.svg";
+import imgResponsive from "./assets/images/illustration-sign-up-desktop.svg";
+import features from "./assets/images/icon-list.svg";
 import { useState } from "react";
 
 function App() {
